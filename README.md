@@ -10,7 +10,7 @@ A comprehensive guide on setting up JetsonNano with ROS2
 
 ## System setup comparision
 
-| Base OS | Jetpack | ROS | Dockerized | Desktop | CPU / GPU Frequency | Idle RAM (GB) | Storage (GB)| Tutorial |
+| Base OS | Jetpack | ROS | Docker | Desktop | CPU / GPU Frequency | Idle RAM (GB) | Storage (GB)| Tutorial |
 |---	|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Ubuntu 20.04 [QEngineering](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#bare-image) | 4.6.1 | Humble | Yes	| Yes | 1900Mz / 950Mz |     |     |     |
 | Ubuntu 20.04	[QEngineering](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#bare-image) | 4.6.1 | Humble	| Yes | No |  1900Mz / 950Mz |     |     |     |
