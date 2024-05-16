@@ -11,47 +11,52 @@
    ```bash
    sudo apt upgrade
    ```
+5. Add CUDA path to .bashrc. First open .bashrc 
+   ```bash
+   gedit .bashrc
+   ```
+   and add the following lines to end of the file
+   ```bash
+   export PATH=${PATH}:/usr/local/cuda/bin
+   export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda/lib64
+   ```
+
 
 <br>
 
 ## Testing the CUDA functionality
 
-First open .bashrc 
-```bash
-gedit .bashrc
-```
+1. Open a new Terminal to refresh the path variables. Then run,
 
-and add the following lines to it
-```bash
-export PATH=${PATH}:/usr/local/cuda/bin
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda/lib64
-```
+   ```bash
+   /usr/local/cuda-10.2/bin/cuda-install-samples-10.2.sh .
+   cd NVIDIA_CUDA-10.2_Samples/
+   ```
 
-close the current terminal and open a new Terminal to refresh the path variables. Then run,
+2. Build the examples by running
+   ```bash
+   make
+   ```
 
-```bash
-/usr/local/cuda-10.2/bin/cuda-install-samples-10.2.sh .
-cd NVIDIA_CUDA-10.2_Samples/
-```
-then
-```bash
-make
-```
+   if an error pops up saying,
 
-if an error pops up saying,
+   ```bash
+   error -- unsupported GNU version! gcc versions later than 8 are not supported!
+   ```
+   run
 
-```bash
-error -- unsupported GNU version! gcc versions later than 8 are not supported!
-```
-
-run
-
-```bash
-make HOST_COMPILER=/usr/bin/g++-7
-```
+   ```bash
+   make HOST_COMPILER=/usr/bin/g++-7
+   ```
 
 <br>
 
 ## ROS Installation
 
 1. Install ROS 2 Foxy ROS Base (Bare Bones Installation) following instructions [here](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
+
+2. Then in the terminal run,
+
+   ```bash
+   echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+   ```
