@@ -14,7 +14,7 @@ A comprehensive guide on setting up JetsonNano with ROS2
 |---	|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [20.04](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#bare-image) | 4.6.2 | 10.2 |Humble | Yes	| Yes | 1900Mz / 998Mz |     |     |
 | [20.04](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#bare-image) | 4.6.2 | 10.2  |Humble	| No | Yes | 1900Mz / 998Mz |     |     |
-| [20.04](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#bare-image) | 4.6.2 | 10.2  |Foxy | Yes | No | 1900Mz / 998Mz | 1.5 / 3.9 | [Image](/JetsonNano-ROS2/images/u20-foxy-noDocker-Desktop.png) [Tutorial](/JetsonNano-ROS2/docs/u20-foxy-noDocker-Desktop.md) |
-| [20.04](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#bare-image) | 4.6.2 | 10.2  |Foxy | No	| No 	| 1900Mz / 998Mz | 0.4 / 3.9 | [Image](/JetsonNano-ROS2/images/u20-foxy-noDocker-noDesktop.png) [Tutorial](/JetsonNano-ROS2/docs/u20-foxy-noDocker-noDesktop.md) |
-| [18.04](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)| 4.6.4 | 10.2  | Humble | Yes | Yes | 1479Mz / 920Mz |     |     |
+| [20.04](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#bare-image) | 4.6.2 | 10.2  |Foxy | Yes | No | 1900Mz / 998Mz | 1.5 / 3.9 | [Image](/images/u20-foxy-noDocker-Desktop.png) [Tutorial](/docs/u20-foxy-noDocker-Desktop.md) |
+| [20.04](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#bare-image) | 4.6.2 | 10.2  |Foxy | No	| No 	| 1900Mz / 998Mz | 0.4 / 3.9 | [Image](/images/u20-foxy-noDocker-noDesktop.png) [Tutorial](/docs/u20-foxy-noDocker-noDesktop.md) |
+| [18.04](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)| 4.6.4 | 10.2  | Humble | Yes | Yes | 1479Mz / 920Mz | 0.4 / 3.9 | [Image](/images/u18-humble-Docker-Desktop.png) [Tutorial](/docs/u18-humble-Docker-Desktop.md) |
 | [18.04](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)| 4.6.4 | 10.2  | Humble	| No | Yes | 1479Mz / 920Mz |     |     |
