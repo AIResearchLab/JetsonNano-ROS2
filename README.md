@@ -16,7 +16,9 @@ A comprehensive guide on setting up JetsonNano with ROS2
 
 - GUI column represents whether a GUI is available or not. No GUI was achieved by removing all the GUI related components. Please refer relevant tutorials for the steps.
 
-- Idle RAM has been measured as it determines the Neural Netork model sizes that can be loaded into the device.
+- Idle RAM has been measured as it determines the Neural Netork model sizes that can be loaded into the device. 
+
+- In the combinations that has Docker, the Idle RAM has been measured while the Base ROS Docker image is running.
 
 - Only the provided overclocking settings was used, but further customization can be done according to [here](https://qengineering.eu/overclocking-the-jetson-nano.html)
 
