@@ -20,6 +20,7 @@
    export PATH=${PATH}:/usr/local/cuda/bin
    export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda/lib64
    ```
+
 6. Temporary disabling the GUI via Ctrl+Alt+F7 [does not free up the RAM](/images/u20-GUI-temporary-disable-terminal.png). Temporory disabling the GUI environment via GRUB did not succeed as there is no grub in arm architecture and could not figure out how to modify the boot parameters. Leaving for future....
 
 7. Remove Desktop environment, Display manager, Libreoffice and other GUI based stuff based on [Issue 88](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image/issues/88)
@@ -118,10 +119,9 @@
 
 ## ROS Installation
 
-1. Install ROS 2 Foxy ROS Base (Bare Bones Installation) following instructions [here](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
-
-2. Then in the terminal run,
+1. Start the ROS2 Humble ros-base docker container using the following command. For more customized containers checkout [KalanaRatnayake/Jetson-ROS-Docker](https://github.com/KalanaRatnayake/Jetson-ROS-Docker). To build your own docker images, follow instructions at [dusty-nv/jetson-containers](https://github.com/dusty-nv/jetson-containers)
 
    ```bash
-   echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+   docker pull dustynv/ros:humble-ros-base-l4t-r32.7.1
+   docker run --rm -it --runtime nvidia --network host --gpus all -e DISPLAY dustynv/ros:humble-ros-base-l4t-r32.7.1
    ```
