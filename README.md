@@ -5,10 +5,14 @@ A comprehensive guide on setting up JetsonNano with ROS2
 
 - Jetson Nano can be generally powered from a micro usb power supply (5V 2A 10W max). This can manage a keyboard, a mouse and a small camera.
 - If planned use case for Jetson Nano is to run Neural Networks along with Depth cameras, it is better to power the device via the DC barrel jack (5V 4A 20W max).
-
 - System setup comparison section contains various combinations of Ubuntu and ROS2 that was tested with and without GUI, and with and without docker.
+- Main purpose was to identify the stable combination that allows for the latest ROS version to be used as well as get the maximum output from the Jetson Nano.
 
-- Main purpose was to identify the stable combination that allows for the latest ROS version to be used as well as get the maximum output from the Jetson Nano
+<br>
+
+## Recommneded Installation
+
+- Follow the guidelines in [Install Docker engine](https://docs.docker.com/engine/install/ubuntu/) to update the preinstalled docker version.
 
 <br>
 
@@ -27,7 +31,6 @@ A comprehensive guide on setting up JetsonNano with ROS2
     ```bash
     docker pull dustynv/ros:humble-ros-base-l4t-r32.7.1
     ```
-
 
 <br>
 
